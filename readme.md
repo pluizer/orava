@@ -38,6 +38,8 @@ it prints `they-are-equal`, if not (but why :) it prints `they-are-unequal`.
 
 ### Iteration
 You can put lists with `[` and `]` and iterate over there contents with `iter` and `endit`.
+
+
 Example:
 ```
 [ 1 2 3 ] iter 1 + print endit
@@ -51,7 +53,9 @@ Will print:
 TODO: more documentation about lists ...
 
 ### Functions
-You can put often used sequences of commands in functions using `: [name of command] [form ...]`.
+You can put often used sequences of commands in functions using
+
+`: [name of command] [form ...]`.
 
 Example:
 ```
