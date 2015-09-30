@@ -25,11 +25,17 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 #include "common.h"
 
+/**
+   Prints a string.
+*/
 void output(char str[])
 {
     printf("%s", str);
 }
 
+/**
+   Returns the length of a string.
+*/
 unsigned _strlen(char str[])
 {
     int i=0;
@@ -37,6 +43,9 @@ unsigned _strlen(char str[])
     return i;
 }
 
+/**
+   Copies a string.
+*/
 void _strcpy(char dest[], char src[])
 {
     int i=0;
@@ -47,6 +56,9 @@ void _strcpy(char dest[], char src[])
     dest[i]='\0';
 }
 
+/**
+   Checks if two string a equal.
+*/
 bool _streql(char str_a[], char str_b[])
 {
     int i=0;
@@ -57,11 +69,17 @@ bool _streql(char str_a[], char str_b[])
     return (str_b[i]=='\0');
 }
 
+/**
+   Returns true if a character is a "whitespace character".
+*/
 bool iswhite(char c)
 {
     return (c==' ')||(c=='\t')||(c=='\n');
 }
 
+/**
+   Splits strings seperated by white spaces.
+*/
 unsigned split(char dest[][NAME_SIZE], char* src)
 {
     int i=0, j=0, k=0;
@@ -88,6 +106,9 @@ unsigned split(char dest[][NAME_SIZE], char* src)
     return j;
 }
 
+/**
+   Rase base to the power of exp
+*/
 int ipow(int base, int exp)
 {
     int result = 1;
@@ -102,6 +123,9 @@ int ipow(int base, int exp)
     return result;
 }
 
+/**
+   Returns if string represents a number.
+*/
 bool is_int(char str[])
 {
     int i = 0;
@@ -114,6 +138,9 @@ bool is_int(char str[])
     return !(str[i-1] == '-');
 }
 
+/**
+   Converts an integer to a string.
+*/
 void to_str(char str[], int v)
 {
     int i, l;
@@ -127,6 +154,9 @@ void to_str(char str[], int v)
     str[l] = '\0';
 }
 
+/**
+   Converts a string to an integer.
+*/
 int to_int(char str[])
 {
     int i = 0, c = 0, r = 0, d, m = 0;;
