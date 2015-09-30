@@ -5,7 +5,7 @@ _Orava_ is a very small interpreted language that by accident resembles [Forth](
 ## Why?
 * because I needed this for a project where I did not have physical access to a microcontroller but could reach it via Bluetooth.
 * Because I could.
-* Because I wanted to run simple script on an Arduino without a compile, upload cycle.
+* Because I wanted to run simple scripts on an Arduino without a compile, upload cycle.
 
 ## How?
 (under construction)
