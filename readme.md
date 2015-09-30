@@ -3,6 +3,7 @@
 _Orava_ is a very small interpreted language that by accident resembles [Forth](https://nl.wikipedia.org/wiki/Forth*%28programmeertaal%29) (I did not know about Forth at the time I made this). It is small enough to fit an Arduino without sacrificing the readability of the code.
 
 ## Why?
+* because I needed this for a project where I did not have physical access to a microcontroller but could reach it via Bluetooth.
 * Because I could.
 * Because I wanted to run simple script on an Arduino without a compile, upload cycle.
 
