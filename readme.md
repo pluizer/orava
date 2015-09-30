@@ -9,7 +9,7 @@ _Orava_ is a very small interpreted language that by accident resembles [Forth](
 
 ## How?
 (under construction)
-Orava is a stack based language. Commands can place items on the stack and/or take items from the stack for there arguments.
+Orava is a stack based language. Commands can place items on the stack and/or take items from the stack for their arguments.
 
 For example:
 ```
