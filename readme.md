@@ -9,7 +9,7 @@ _Orava_ is a very small interpreted language that by accident resembles [Forth](
 
 ## How?
 (under construction)
-Orava is a stack based language. Commands can place items on the stack and/or take items from the stack for their arguments.
+_Orava_ is a stack based language. Commands can place items on the stack and/or take items from the stack for their arguments.
 
 For example:
 ```
@@ -69,10 +69,9 @@ The stack can be used as arguments to functions. Here is how to manipulate the s
 `n_pop  n` 		removes _n_ items from the stack.
 `clear`	   		clears the entire stack
 
-### Extending Orava
-In your source code where you embed Orava you can use `void compile_builtin(char str[], void(*func)())` to extend
-Orava with a new foreign C/C++ function. `str` must be the name of the name function in Orava. `func` a pointer to
-a C/C++ function that takes no argument, and returns no value.
+### Extending _Orava_
+In your source code where you embed _Orava_ you can use `void compile_builtin(char str[], void(*func)())` to extend
+_Orava_ with a new foreign C/C++ function. `str` must be the name of the function in _Orava_. `func` a pointer to a C/C++ function that takes no argument, and returns no value.
 
 TODO: More to follow ...
 
