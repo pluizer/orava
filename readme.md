@@ -13,15 +13,15 @@ _Orava_ is a stack based language. Commands can place items on the stack and/or 
 
 For example:
 ```
-		| Here the stack is empty				|	[]
-1		| Places '1' on the stack				|	[1]
-3		| Places '3' on the stack				|	[1, 3]
-4		| Places '4' on the stack				|	[1, 3, 4]
-+   	| Consumes 2 items and adds them and   	|	[1, 7]
-		| places the answer on the stack	   	|
--   	| Consumes 2 items and subtracts them	|	[-6]
-		| and places the answer on the stack	|	
-print	| Consumes 1 item, and prints it. (-6)	|	[]
+		; Here the stack is empty					[]
+1		; Places '1' on the stack					[1]
+3		; Places '3' on the stack					[1, 3]
+4		; Places '4' on the stack					[1, 3, 4]
++   	; Consumes 2 items and adds them and   		[1, 7]
+		; places the answer on the stack	   	
+-   	; Consumes 2 items and subtracts them		[-6]
+		; and places the answer on the stack		
+print	; Consumes 1 item, and prints it. (-6)		[]
 ```
 
 ### Branching
@@ -69,7 +69,7 @@ The stack can be used as arguments to functions. Here is how to manipulate the s
 `n_pop  n` 		removes _n_ items from the stack.
 `clear`	   		clears the entire stack
 
-### Extending _Orava_
+### Extending Orava
 In your source code where you embed _Orava_ you can use `void compile_builtin(char str[], void(*func)())` to extend
 _Orava_ with a new foreign C/C++ function. `str` must be the name of the function in _Orava_. `func` a pointer to a C/C++ function that takes no argument, and returns no value.
 
